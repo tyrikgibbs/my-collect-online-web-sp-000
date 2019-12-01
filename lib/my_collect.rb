@@ -1,6 +1,7 @@
 def my_collect(array)
-  array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+  new_array = []
   my_collect(array) do |name|
-    name.split(" ").first
+    new_array << name.split(" ").first  
   end
+  
 end
